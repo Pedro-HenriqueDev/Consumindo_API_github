@@ -1,0 +1,189 @@
+// Configurações Gerais
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+* { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box
+}
+body {
+    background: hsl(0, 0%, 14%);
+    font-family: 'Quicksand', sans-serif;
+}
+
+// Layaout
+.title {
+    display: flex;
+    justify-content: center;
+    color: hsl(208, 100%, 97%);
+    margin-top: 10px;
+}
+.container {
+    justify-content: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(34, 78%, 91%);
+}
+.div_search {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+
+        #search {
+            padding: 17px 10px;
+            font-size: 16px;
+            font-family: 'Quicksand', sans-serif;
+            height: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        #search:focus {
+            box-shadow: 2px 2px 2px 2px hsla(271, 76%, 53%, 0.486);
+        }
+        #btn_submit {
+            margin-left: 10px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            padding: 10px;
+            background: hsl(276, 84%, 24%);
+        }
+    }
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsla(271, 76%, 53%, 0.486);
+    border-radius: 20px;
+    padding: 20px;
+    height: auto;
+
+    .message {
+    font-size: 32px;
+    }
+}
+
+.user_info {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+
+    background-color: hsla(271, 76%, 53%, 0.486);
+    border-radius: 20px;
+    padding: 20px;
+    width: auto;
+    height: auto;
+}
+.user_info .child {
+    width: 300px;
+    margin: 10px;
+}
+// Coluna 1
+.info_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+
+    .div_img {
+        width: 215px;
+        height: 215px;
+        display: flex;
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        
+    }
+    .div_img img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.5);
+    }
+    .name_user {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+}
+//Coluna 2
+.info_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+
+// Coluna 3 
+.sub-title {
+    margin-bottom: 20px;
+}
+.li_repos {
+    list-style-image: url(../img/001-seta-direita.png);
+    margin-left: 20px;
+}
+.links_repos {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    transition: 0.3s all;
+}
+.links_repos:hover {
+    color: hsl(0, 0%, 81%);
+}
+
+    
+.footer {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+
+@media (max-width: 991.98px) { 
+    .container {
+        justify-content: center;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: hsl(34, 78%, 91%);
+    }
+    .user_info {
+        display: none;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 30px;
+        width: 400px;
+    }
+    .user_info .child {
+        margin-bottom: 30px;
+    }
+
+    .info_2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100px;
+
+    }
+    .user_follow {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 567px) { 
+    .user_info {
+        width: 90%;
+    }
+}
